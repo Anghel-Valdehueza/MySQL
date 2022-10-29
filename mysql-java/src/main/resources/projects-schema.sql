@@ -48,7 +48,7 @@ CREATE TABLE `step` (
   `step_id` INTEGER NOT NULL AUTO_INCREMENT,
   `project_id` INTEGER NOT NULL,
   `step_text` INTEGER NOT NULL,
-  `step_order` INTEGER DEFAULT NULL,
+  `step_order` INTEGER NOT NULL,
   PRIMARY KEY (`step_id`),
   CONSTRAINT `step_project_id_fk` FOREIGN KEY (`step_id`) REFERENCES `project` (`project_id`) ON DELETE CASCADE
 );
